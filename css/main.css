@@ -1,0 +1,233 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: 'Poppins',sans-serif;
+  color: #4c4e61;
+}
+
+.container {
+  padding: 90px 32px 72px 32px;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 64rem) {
+  .container {
+    padding: 50px 30px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container {
+    height: 100vh;
+    padding: 0 160px;
+  }
+}
+
+.container__header {
+  padding: 0 8px;
+  text-align: center;
+}
+
+@media (min-width: 64rem) {
+  .container__header {
+    width: 620px;
+  }
+}
+
+.container__heading {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 36px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 64rem) {
+  .container__heading {
+    font-size: 38px;
+    line-height: 52px;
+  }
+}
+
+.container__heading span {
+  font-weight: 600;
+}
+
+.container__prgf {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a3a5ae;
+  margin-bottom: 72px;
+}
+
+@media (min-width: 64rem) {
+  .container__prgf {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+.container__grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 39.9375rem) {
+  .container__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 40rem) {
+  .container__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 30px;
+        grid-template-areas: "supervisor team-builder calculator" "supervisor karma calculator";
+  }
+}
+
+.container__item {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container__item .description {
+  padding: 32px 32px 28px 32px;
+}
+
+.container__item h2 {
+  font-size: 20px;
+  color: #4c4e61;
+  margin-bottom: 14px;
+}
+
+.container__item p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #a3a5ae;
+  margin-bottom: 36px;
+}
+
+.container__item .image {
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 39.9375rem) {
+  .container__item .image {
+    height: 55px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__item .image {
+    height: 64px;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .container__item .image img {
+    width: 55px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__item .image img {
+    width: 64px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container__item.item1 {
+    grid-area: supervisor;
+    margin: 132px 0;
+  }
+}
+
+.container__item.item1 .border {
+  height: 4px;
+  width: 100%;
+  background-color: #45d3d3;
+}
+
+@media (min-width: 64rem) {
+  .container__item.item2 {
+    grid-area: team-builder;
+  }
+}
+
+.container__item.item2 .border {
+  height: 4px;
+  width: 100%;
+  background-color: #ea5353;
+}
+
+@media (min-width: 64rem) {
+  .container__item.item3 {
+    grid-area: karma;
+  }
+}
+
+.container__item.item3 .border {
+  height: 4px;
+  width: 100%;
+  background-color: #fcaf4a;
+}
+
+@media (min-width: 64rem) {
+  .container__item.item4 {
+    grid-area: calculator;
+    margin: 132px 0;
+  }
+}
+
+.container__item.item4 .border {
+  height: 4px;
+  width: 100%;
+  background-color: #549ef2;
+}
+
+.container__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=main.css.map */
